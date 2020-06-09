@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=0f9057df877b1545afde5ac3f5eead9d"></script> 
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <script type="text/javascript">
+          if(/Android|webOS| iPhone  | iPod |BlackBerry|opera mini|opera mobile|appleWebkit.*mobile|mobile/i.test(
+                 navigator.userAgent)) {
+                   window.location.href = "http://123.57.243.126:8081/";
+                  }
+      </script>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
